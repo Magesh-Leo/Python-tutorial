@@ -1,0 +1,316 @@
+'''i=1
+while i<=6 :
+    for j in range(1,i):
+        print(j,end="\t")
+    print(end='\n')
+    i+=1
+
+str="welcome to python"
+print(str[0:7])
+'''
+###################################
+'''
+i=int(input('enter the number:'))
+a=int(input('start  the range:'))
+b=int(input('end the range:'))
+
+for z in range(a,b+1):
+    s=z*i
+    print(f'{i}*{z}={s}')
+''''''
+#######
+for i in range(1,6):
+    for j in range(1,6):
+        print(f'{i}',end="")
+    print(end="\n")
+o/p:
+11111
+22222
+33333
+44444
+55555
+######
+'''
+'''
+for i in range(1,6):
+    for j in range(65,70):
+        print(chr(j),end="")
+    print(end="\n")
+o/p:
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE'''
+'''
+for i in range(5,0,-1):
+    for j in range(1,6):
+        print(i,end="")
+    print(end="\n")
+o/p:
+55555
+44444
+33333
+22222
+11111
+
+for i in range(1,6):
+    for j in range(5,0,-1):
+        print(j,end="")
+    print(end="\n")
+o/p:
+54321
+54321
+54321
+54321
+54321
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print("*",end="")
+    print(end="\n")
+o/p:
+*
+**
+***
+****
+*****
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j,end="")
+    print(end="\n")
+o\p:
+1
+12
+123
+1234
+12345
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(i,end="")
+    print(end="\n")
+o/p:
+1
+22
+333
+4444
+55555
+
+
+for i in range(65,70):
+    for j in range(65,i+1):
+        print(chr(i),end="")
+    print(end="\n")
+o/p:
+A
+BB
+CCC
+DDDD
+EEEEE
+
+for i in range(65,70):
+    for j in range(65,i+1):
+        print(chr(j),end="")
+    print(end="\n")
+
+A
+AB
+ABC
+ABCD
+ABCDE
+
+for i in range(5,0,-1):
+    for j in range(0,i):
+        print("*",end="")
+    print()
+
+*****
+****
+***
+**
+*
+
+for i in range(1,6):
+    for j in range(6,i,-1):
+        print(i,end="")
+    print()
+11111
+2222
+333
+44
+5
+
+for i in range(6,1,-1):
+    for j in range(1,i):
+        print(j,end="")
+    print()
+
+12345
+1234
+123
+12
+1
+
+for i in range(71,65,-1):
+    for j in range(65,i):
+        print(chr(j),end="")
+    print()
+
+ABCDEF
+ABCDE
+ABCD
+ABC
+AB
+A
+
+for i in range(65,70):
+    for j in range(70,i,-1):
+        print(chr(i),end="")
+    print()
+AAAAA
+BBBB
+CCC
+DD
+E
+
+for i in range(5,0,-1):
+    for j in range(i,0,-1):
+        print(j,end="")
+    print()
+54321
+4321
+321
+21
+1
+
+for i in range(5,0,-1):
+    for j in range(i,0,-1):
+        print(i,end="")
+    print()
+
+55555
+4444
+333
+22
+1
+
+
+for i in range(65,70):
+    for j in range(70,i,-1):
+        print(chr(j),end="")
+    print()
+o/p:
+FEDCB
+FEDC
+FED
+FE
+F
+
+for i in range(1,6):
+    for j in range(6,i,-1):
+        print("?",end="")
+    for i in range(1,i):
+        print("*",end="")
+    print()
+o/p:
+????*
+???**
+??***
+?****
+
+for i in range(0,6):
+    for x in range(6,i,-1):
+        print(" ",end="")
+    for y in range(0,i):
+        print(i,end="")
+    print() 
+o/p:
+     1
+    22
+   333
+  4444
+ 55555
+
+for i in range(1,6):
+    for x in range(6,i,-1):
+        print(" ",end="")
+    for y in range(1,i+1):
+        print(y,end="")
+    print()
+o/p:
+     1
+    12
+   123
+  1234
+ 12345
+
+for i in range(6,1,-1):
+    for y in range(i,7):
+        print("*",end="")
+    for x in range(1,i):
+        print(x,end="")
+    print()
+o/p:
+*12345
+**1234
+***123
+****12
+*****1
+
+for i in range(1,6):
+    for x in range(i,6):
+        print(" ",end="")
+    for y in range(1,i+1):
+        print("*",end="")
+    for a in range(1,i):
+        print("*",end="")
+    print()
+o/p:
+     *
+    ***
+   *****
+  *******
+ *********
+
+inc=1
+for i in range(5,0,-1):
+    for j in range(i,0,-1):
+        print(" ",end="")
+    print("*"*inc)
+    inc+=2
+o/p:
+     *
+    ***
+   *****
+  *******
+ *********
+
+for i in range(6,1,-1):
+    for x in range(1,i):
+        print(" ",end="")
+    for y in range(i+1,6):
+        print("*",end="")
+    for a in range(i,6):
+        print("*",end="")
+    print()
+for i in range(6,1,-1):
+    for x in range(i,6):
+        print(" ",end="")
+    for y in range(1,i-1):
+        print("*",end="")
+    for a in range(1,i):
+        print("*",end="")
+    print()
+o/p:
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+'''

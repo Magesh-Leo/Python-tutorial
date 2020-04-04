@@ -1,0 +1,11 @@
+import turtle 
+turtle_var=Turtle.Turtle()
+def square():
+    turtle_var.forward(100)
+    turtle_var.right(90)
+    turtle_var.forward(100)
+    turtle_var.right(90)
+    turtle_var.forward(100)
+    turtle_var.right(90)
+    turtle_var.forward(100)
+square()

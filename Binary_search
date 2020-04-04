@@ -1,0 +1,24 @@
+pos=-1
+def binary_search(list,n):
+  l=0
+  u=len(list)
+  while 1<=u:
+    mid=(l+u)//2
+    if list(mid)==n:
+       globals()['pos']=mid
+       return True
+     else:
+        if list[mid]<n:
+           l=mid+1
+         else:
+           u=mid-1
+        Return False
+        
+        
+        
+list=[5,8,9,4,6,2]
+n=8
+if binary_search(list,n):
+    print("Found at",pos+1)
+ else:
+     print("Not found")
